@@ -51,7 +51,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='eceibs',
-    version='1.0.1',
+    version='1.0.2',
     keywords='eceibs, SDK',
     description='eceibs SDK for Python',
     long_description=long_description,
