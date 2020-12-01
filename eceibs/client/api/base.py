@@ -23,9 +23,6 @@ class CecibsBaseAPI(object):
             kwargs['api_base_url'] = self.API_BASE_URL
         return self._client.gen_url(url, params, **kwargs)
 
-    def add_sign(self, data, random_str_key="randomstr", sign_key="sign"):
-        return self._client.add_sign(data, random_str_key, sign_key)
-
     @property
     def company_code(self):
         return self._client.company_code
