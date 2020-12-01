@@ -2,3 +2,4 @@
 
 from .auth import Auth
 from .open import Open
+from .column import Column

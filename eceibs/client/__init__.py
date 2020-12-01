@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 class EceibsClient(BaseClient):
     auth = api.Auth()
     open = api.Open()
+    column = api.Column()
 
     def __init__(self, company_code, open_secret, storage=None, timeout=None):
         super().__init__(storage=storage, timeout=timeout)
