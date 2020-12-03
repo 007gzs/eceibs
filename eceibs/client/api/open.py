@@ -161,7 +161,7 @@ class Open(CecibsBaseAPI):
         :param login_name: 当前登录的用户名称
         """
         assert _from in (1, 2)
-        self._post('/v1/open/learn_rate_open', {
+        return self._post('/v1/open/learn_rate_open', {
             'from': _from,
             'company_code': self.company_code,
             'trainplan_id': trainplan_id,
@@ -198,7 +198,7 @@ class Open(CecibsBaseAPI):
                 raise TypeError("data type error " + d)
             _data.append(sub_data)
 
-        self._post('/v1/open/learn_rate_open_batch', {
+        return self._post('/v1/open/learn_rate_open_batch', {
             'from': _from,
             'company_code': self.company_code,
             'data': json.dumps(_data),
@@ -225,7 +225,7 @@ class Open(CecibsBaseAPI):
                 raise TypeError("data type error " + d)
             _data.append(sub_data)
 
-        self._post('/v1/open/paper_rate_open_batch', {
+        return self._post('/v1/open/paper_rate_open_batch', {
             'from': _from,
             'company_code': self.company_code,
             'data': json.dumps(_data),
