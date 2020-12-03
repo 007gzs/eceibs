@@ -1,7 +1,5 @@
 # encoding: utf-8
 
-from .utils import to_binary, to_text
-
 
 class EceibsException(Exception):
 

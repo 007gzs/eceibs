@@ -110,7 +110,6 @@ class Open(CecibsBaseAPI):
             disable_drag=disable_drag,
         )
 
-
     def paper_history(
             self,
             _from,
